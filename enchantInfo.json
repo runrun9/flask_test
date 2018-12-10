@@ -1,0 +1,172 @@
+{
+  "protection": {
+    "item": 1,
+    "book": 1,
+    "max": 4
+  },
+  "fire_protection": {
+    "item": 2,
+    "book": 1,
+    "max": 4
+  },
+  "feather_falling": {
+    "item": 2,
+    "book": 1,
+    "max": 4
+  },
+  "blast_protection": {
+    "item": 4,
+    "book": 2,
+    "max": 4
+  },
+  "projectile_protection": {
+    "item": 2,
+    "book": 1,
+    "max": 4
+  },
+  "thorns": {
+    "item": 8,
+    "book": 4,
+    "max": 3
+  },
+  "respiration": {
+    "item": 4,
+    "book": 2,
+    "max": 3
+  },
+  "depth_strider": {
+    "item": 4,
+    "book": 2,
+    "max": 3
+  },
+  "aqua_affinity": {
+    "item": 4,
+    "book": 2,
+    "max": 1
+  },
+  "sharpness": {
+    "item": 1,
+    "book": 1,
+    "max": 5
+  },
+  "smite": {
+    "item": 2,
+    "book": 1,
+    "max": 5
+  },
+  "bane_of_arthropods": {
+    "item": 2,
+    "book": 1,
+    "max": 5
+  },
+  "knockback": {
+    "item": 2,
+    "book": 1,
+    "max": 2
+  },
+  "fire_aspect": {
+    "item": 4,
+    "book": 2,
+    "max": 2
+  },
+  "looting": {
+    "item": 4,
+    "book": 2,
+    "max": 3
+  },
+  "efficiency": {
+    "item": 1,
+    "book": 1,
+    "max": 5
+  },
+  "silk_touch": {
+    "item": 8,
+    "book": 4,
+    "max": 5
+  },
+  "unbreaking": {
+    "item": 2,
+    "book": 1,
+    "max": 3
+  },
+  "fortune": {
+    "item": 4,
+    "book": 2,
+    "max": 3
+  },
+  "power": {
+    "item": 1,
+    "book": 1,
+    "max": 5
+  },
+  "punch": {
+    "item": 4,
+    "book": 2,
+    "max": 2
+  },
+  "flame": {
+    "item": 4,
+    "book": 2,
+    "max": 1
+  },
+  "infinity": {
+    "item": 8,
+    "book": 4,
+    "max": 1
+  },
+  "luck_of_the_sea": {
+    "item": 4,
+    "book": 2,
+    "max": 3
+  },
+  "lure": {
+    "item": 4,
+    "book": 2,
+    "max": 3
+  },
+  "frost_walker": {
+    "item": 4,
+    "book": 2,
+    "max": 2
+  },
+  "mending": {
+    "item": 4,
+    "book": 2,
+    "max": 1
+  },
+  "binding_curse": {
+    "item": 8,
+    "book": 4,
+    "max": 1
+  },
+  "vanishing_curse": {
+    "item": 8,
+    "book": 4,
+    "max": 1
+  },
+  "impaling": {
+    "item": 4,
+    "book": 2,
+    "max": 5
+  },
+  "riptide": {
+    "item": 4,
+    "book": 2,
+    "max": 3
+  },
+  "loyalty": {
+    "item": 4,
+    "book": 2,
+    "max": 3
+  },
+  "channeling": {
+    "item": 4,
+    "book": 2,
+    "max": 1
+  },
+  "sweeping": {
+    "item": 4,
+    "book": 2,
+    "max": 3
+  }
+}
