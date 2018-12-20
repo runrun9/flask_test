@@ -2,16 +2,35 @@
 <html>
     <head>
         <title>top</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     </head>
     <body>
-        <form action="/" method="post">
-            item1:<select name="item1">
+        <form calss="form-horizontal" action="/" method="post">
+          <div class="form-group">
+            <div class="col-sm-6">
+              <label class="col-sm-2 control-label">item1</label>
+              <select name="item1" class="form-control">
                 <option value='{"itemType":"book", "enchantType":["smite", "unbreaking"], "enchantLevel":[2, 2], "priorWorkPenalty":2}'>対象1</option>
-            </select>
-            item2:<select name="item2">
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-6">
+              <label class="col-sm-2 control-label">item2</label>
+              <select name="item2" class="form-control">
                 <option value='{"itemType":"book", "enchantType":["knockback", "unbreaking", "smite"], "enchantLevel":[1, 2, 4], "priorWorkPenalty":4}'>対象2</option>
-            </select>
-            <input type="submit" value="ok">
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-default">送信</button>
+            </div>
+          </div>
         </form>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </body>
 </html>
