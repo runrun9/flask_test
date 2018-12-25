@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from synthesizeItem import synthesizeItem 
+from synthesizeItem import synthesizeItem
 import itemClass
 import json
 
@@ -12,8 +12,10 @@ def hello():
 @app.route("/", methods=["GET", "POST"])
 def top():
     if request.method == "GET":
-        return render_template("main.html")
-    
+        with open("itemInfo.json", "r") as f:
+            json_data = json.load(f)
+        return render_template("main.html", json_data=json_data)
+
     else:
         data1 = json.loads(request.form["item1"])
         data2 = json.loads(request.form["item2"])
@@ -24,4 +26,4 @@ def top():
         return render_template("response.html", data1=res[0], data2=res[1])
 
 if __name__ == "__main__":
-    app.run() 
+    app.run()

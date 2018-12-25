@@ -1,0 +1,205 @@
+{
+  "sword": {
+    "permissionItem": [
+      "sword",
+      "book"
+    ],
+    "permissionEnchant": [
+      "mending",
+      "unbreaking",
+      "smite",
+      "bane_of_arthropods",
+      "sharpness",
+      "sweeping_edge",
+      "knockback",
+      "fire_aspect",
+      "looting"
+    ]
+  },
+  "ax": {
+    "permissionItem": [
+      "ax",
+      "book"
+    ],
+    "permissionEnchant": [
+      "mending",
+      "unbreaking",
+      "smite",
+      "bane_of_arthropods",
+      "sharpness",
+      "silk_touch",
+      "fortune",
+      "efficiency"
+    ]
+  },
+  "bow": {
+    "permissionItem": [
+      "bow",
+      "book"
+    ],
+    "permissionEnchant": [
+      "mending",
+      "unbreaking",
+      "power",
+      "flame",
+      "punch",
+      "infinity"
+    ]
+  },
+  "trident": {
+    "permissionItem": [
+      "trident",
+      "book"
+    ],
+    "permissionEnchant": [
+      "mending",
+      "unbreaking",
+      "impaling",
+      "channeling",
+      "riptide",
+      "loyalty"
+    ]
+  },
+  "pickax": {
+    "permissionItem": [
+      "pickax",
+      "book"
+    ],
+    "permissionEnchant": [
+      "mending",
+      "unbreaking",
+      "silk_touch",
+      "fortune",
+      "efficiency"
+    ]
+  },
+  "shovel": {
+    "permissionItem": [
+      "shovel",
+      "book"
+    ],
+    "permissionEnchant": [
+      "mending",
+      "unbreaking",
+      "silk_touch",
+      "fortune",
+      "efficiency"
+    ]
+  },
+  "rod": {
+    "permissionItem": [
+      "rod",
+      "book"
+    ],
+    "permissionEnchant": [
+      "mending",
+      "unbreaking",
+      "luck_of_the_sea",
+      "lure"
+    ]
+  },
+  "helmet": {
+    "permissionItem": [
+      "helmet",
+      "book"
+    ],
+    "permissionEnchant": [
+      "mending",
+      "unbreaking",
+      "protection",
+      "fire_protection",
+      "blast_protection",
+      "projectile_protection",
+      "respiration",
+      "aqua_affinity",
+      "thorns"
+    ]
+  },
+  "chest": {
+    "permissionItem": [
+      "chest",
+      "book"
+    ],
+    "permissionEnchant": [
+      "mending",
+      "unbreaking",
+      "protection",
+      "fire_protection",
+      "blast_protection",
+      "projectile_protection",
+      "thorns"
+    ]
+  },
+  "leggings": {
+    "permissionItem": [
+      "leggings",
+      "book"
+    ],
+    "permissionEnchant": [
+      "mending",
+      "unbreaking",
+      "protection",
+      "fire_protection",
+      "blast_protection",
+      "projectile_protection",
+      "thorns"
+    ]
+  },
+  "boots": {
+    "permissionItem": [
+      "boots",
+      "book"
+    ],
+    "permissionEnchant": [
+      "mending",
+      "unbreaking",
+      "protection",
+      "fire_protection",
+      "blast_protection",
+      "projectile_protection",
+      "feather_falling",
+      "thorns",
+      "depth_strider",
+      "frost_walker"
+    ]
+  },
+  "book": {
+    "permissionItem": [
+      "book"
+    ],
+    "permissionEnchant": [
+      "protection",
+      "fire_protection",
+      "feather_falling",
+      "blast_protection",
+      "projectile_protection",
+      "thorns",
+      "respiration",
+      "depth_strider",
+      "aqua_affinity",
+      "sharpness",
+      "smite",
+      "bane_of_arthropods",
+      "knockback",
+      "fire_aspect",
+      "looting",
+      "efficiency",
+      "silk_touch",
+      "unbreaking",
+      "fortune",
+      "power",
+      "punch",
+      "flame",
+      "infinity",
+      "luck_of_the_sea",
+      "lure",
+      "mending",
+      "frost_walker",
+      "impaling",
+      "riptide",
+      "loyalty",
+      "channeling",
+      "sweeping_edge"
+    ]
+  }
+}
