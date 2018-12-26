@@ -9,6 +9,11 @@ app = Flask(__name__)
 def hello():
     return "konti"
 
+@app.route("/test", methods=["POST"])
+def test():
+    print(request.form)
+    return "hai"
+
 @app.route("/", methods=["GET", "POST"])
 def top():
     if request.method == "GET":
