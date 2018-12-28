@@ -35,7 +35,7 @@ document.getElementById("add_item_button").addEventListener("click", function(){
   submit_button.parentNode.insertBefore(new_tag, submit_button);
 
   new_tag = document.createElement("div");
-  new_tag.setAttribute("class", "col-sm-6 form-inline");
+  new_tag.setAttribute("class", "col-sm-12 form-inline");
   new_tag.setAttribute("id", "item"+next_item_num+"_inline");
   let parent_element = document.getElementsByClassName("form-group");
   parent_element[parent_element.length-2].appendChild(new_tag);
