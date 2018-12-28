@@ -11,7 +11,7 @@
         <form calss="form-horizontal" action="/test" method="post">
           <div class="form-group">
             <div class="col-sm-12 form-inline" id="item1_inline">
-              <label class="col-sm-2 control-label">item1</label>
+              <label class="col-sm-1 control-label">item1</label>
               <select name="item1_name" class="form-control" id="item1_id">
                 {% for i in json_data.keys() %}
                   <option value={{ i }}>{{ i }}</option>
@@ -24,7 +24,7 @@
 
           <div class="form-group">
             <div class="col-sm-12 form-inline" id="item2_inline">
-              <label class="col-sm-2 control-label">item2</label>
+              <label class="col-sm-1 control-label">item2</label>
               <select name="item2_name" class="form-control" id="item2_id">
                 {% for i in json_data.keys() %}
                   <option value={{ i }}>{{ i }}</option>

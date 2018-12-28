@@ -28,10 +28,10 @@ document.getElementById("add_item2_enchant_button").addEventListener("click", ad
 document.getElementById("add_item2_enchant_button").item = "item2";
 
 // add itemボタンを押したときの処理
-let submit_button = document.getElementById("submit_button");
 document.getElementById("add_item_button").addEventListener("click", function(){
   let new_tag = document.createElement("div");
   new_tag.setAttribute("class", "form-group");
+  let submit_button = document.getElementById("submit_button");
   submit_button.parentNode.insertBefore(new_tag, submit_button);
 
   new_tag = document.createElement("div");
@@ -41,7 +41,7 @@ document.getElementById("add_item_button").addEventListener("click", function(){
   parent_element[parent_element.length-2].appendChild(new_tag);
 
   new_tag = document.createElement("label");
-  new_tag.setAttribute("class", "col-sm-2 control-label");
+  new_tag.setAttribute("class", "col-sm-1 control-label");
   new_tag.textContent = "item" + next_item_num;
   document.getElementById("item"+next_item_num+"_inline").appendChild(new_tag);
 
