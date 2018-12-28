@@ -18,8 +18,10 @@ def test():
 def top():
     if request.method == "GET":
         with open("itemInfo.json", "r") as f:
-            json_data = json.load(f)
-        return render_template("main.html", json_data=json_data)
+            item_info = json.load(f)
+        with open("enchantInfo.json", "r") as f:
+            enchant_info = json.load(f)
+        return render_template("main.html", item_info=item_info, enchant_info=enchant_info)
 
     else:
         data1 = json.loads(request.form["item1"])

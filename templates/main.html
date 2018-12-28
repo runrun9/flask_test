@@ -13,7 +13,7 @@
             <div class="col-sm-12 form-inline" id="item1_inline">
               <label class="col-sm-1 control-label">item1</label>
               <select name="item1_name" class="form-control" id="item1_id">
-                {% for i in json_data.keys() %}
+                {% for i in item_info.keys() %}
                   <option value={{ i }}>{{ i }}</option>
                 {% endfor %}
               </select>
@@ -26,7 +26,7 @@
             <div class="col-sm-12 form-inline" id="item2_inline">
               <label class="col-sm-1 control-label">item2</label>
               <select name="item2_name" class="form-control" id="item2_id">
-                {% for i in json_data.keys() %}
+                {% for i in item_info.keys() %}
                   <option value={{ i }}>{{ i }}</option>
                 {% endfor %}
               </select>
@@ -37,7 +37,7 @@
           <button id="add_item_button" type="button" class="btn btn-primary">add item</button>
 
           <div class="form-group" id="submit_button">
-            <div class="col-sm-offset-2 col-sm-10">
+            <div class="col-sm-offset-2 col-sm-10" style="top:5px;">
               <button type="submit" class="btn btn-default">送信</button>
             </div>
           </div>
@@ -47,7 +47,8 @@
 
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         <script type="text/javascript">
-          var json_data = {{ json_data|tojson|safe }};
+          var item_info = {{ item_info|tojson|safe }};
+          var enchant_info = {{ enchant_info|tojson|safe }};
         </script>
         <script type="text/javascript" src="static/view_main.js"></script>
 
