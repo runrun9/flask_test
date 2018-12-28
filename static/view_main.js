@@ -28,11 +28,11 @@ document.getElementById("add_item2_enchant_button").addEventListener("click", ad
 document.getElementById("add_item2_enchant_button").item = "item2";
 
 // add itemボタンを押したときの処理
-document.getElementById("add_item_button").addEventListener("click", function(){
+let add_item_button = document.getElementById("add_item_button");
+add_item_button.addEventListener("click", function(){
   let new_tag = document.createElement("div");
   new_tag.setAttribute("class", "form-group");
-  let submit_button = document.getElementById("submit_button");
-  submit_button.parentNode.insertBefore(new_tag, submit_button);
+  add_item_button.parentNode.insertBefore(new_tag, add_item_button);
 
   new_tag = document.createElement("div");
   new_tag.setAttribute("class", "col-sm-12 form-inline");
