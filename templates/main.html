@@ -17,6 +17,11 @@
                   <option value={{ i }}>{{ i }}</option>
                 {% endfor %}
               </select>
+              <select name="item1_prior" class="form-control" id="itemu1_prior_id">
+                {% for i in range(10) %}
+                  <option value="{{ i+1 }}">{{ i+1 }}</option>
+                {% endfor %}
+              </select>
               <button id="add_item1_enchant_button" type="button" class="btn btn-primary">add enchant</button>
             </div>
 
@@ -28,6 +33,11 @@
               <select name="item2_name" class="form-control" id="item2_id">
                 {% for i in item_info.keys() %}
                   <option value={{ i }}>{{ i }}</option>
+                {% endfor %}
+              </select>
+              <select name="item2_prior" class="form-control" id="itemu2_prior_id">
+                {% for i in range(10) %}
+                  <option value="{{ i+1 }}">{{ i+1 }}</option>
                 {% endfor %}
               </select>
               <button id="add_item2_enchant_button" type="button" class="btn btn-primary">add enchant</button>

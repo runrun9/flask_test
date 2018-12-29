@@ -11,7 +11,9 @@ def hello():
 
 @app.route("/test", methods=["POST"])
 def test():
-    print(request.form)
+    for i in sorted(request.form):
+        print("{} : {}".format(i, request.form[i]))
+
     return "hai"
 
 @app.route("/", methods=["GET", "POST"])

@@ -72,6 +72,26 @@ add_item_button.addEventListener("click", function(){
   new_tag.setAttribute("id", "item"+next_item_num+"_id");
   document.getElementById("item"+next_item_num+"_inline").appendChild(new_tag);
 
+  for(let i of document.getElementsByTagName("select")[0].children){
+    new_tag = document.createElement("option");
+    new_tag.setAttribute("value", i.value);
+    new_tag.textContent = i.value;
+    document.getElementById("item"+next_item_num+"_id").appendChild(new_tag);
+  }
+
+  new_tag = document.createElement("select");
+  new_tag.setAttribute("class", "form-control");
+  new_tag.setAttribute("name", "item"+next_item_num+"_prior");
+  new_tag.setAttribute("id", "item"+next_item_num+"_prior_id");
+  document.getElementById("item"+next_item_num+"_inline").appendChild(new_tag);
+
+  for(let i=1; i<11; i++){
+    new_tag = document.createElement("option");
+    new_tag.setAttribute("value", i);
+    new_tag.textContent = i;
+    document.getElementById("item"+next_item_num+"_prior_id").appendChild(new_tag);
+  }
+
   new_tag = document.createElement("button");
   new_tag.setAttribute("id", "add_item"+next_item_num+"_enchant_button");
   new_tag.setAttribute("type", "button");
@@ -80,13 +100,6 @@ add_item_button.addEventListener("click", function(){
   document.getElementById("item"+next_item_num+"_inline").appendChild(new_tag);
   document.getElementById("add_item"+next_item_num+"_enchant_button").addEventListener("click", add_enchant_event);
   document.getElementById("add_item"+next_item_num+"_enchant_button").item = "item"+next_item_num;
-
-  for(let i of document.getElementsByTagName("select")[0].children){
-    new_tag = document.createElement("option");
-    new_tag.setAttribute("value", i.value);
-    new_tag.textContent = i.value;
-    document.getElementById("item"+next_item_num+"_id").appendChild(new_tag);
-  }
 
   next_item_num += 1;
 
