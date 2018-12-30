@@ -85,7 +85,7 @@ add_item_button.addEventListener("click", function(){
   new_tag.setAttribute("id", "item"+next_item_num+"_prior_id");
   document.getElementById("item"+next_item_num+"_inline").appendChild(new_tag);
 
-  for(let i=1; i<11; i++){
+  for(let i=0; i<6; i++){
     new_tag = document.createElement("option");
     new_tag.setAttribute("value", i);
     new_tag.textContent = i;
