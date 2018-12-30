@@ -11,9 +11,26 @@ def hello():
 
 @app.route("/test", methods=["POST"])
 def test():
-    for i in sorted(request.form):
-        print("{} : {}".format(i, request.form[i]))
+    item_count = 0
+    for i in request.form:
+        if i[-4:] == "name":
+            item_count += 1
 
+    items = []
+    for i in range(1, item_count+1):
+        enchant_count = 0
+        for j in request.form:
+            if (j[4] == str(i)) and (j.split("_")[1][:-1] == "enchant"):
+                enchant_count += 1
+        
+        enchants = [[],[]]
+        for j in range(1, enchant_count//2+1):
+            enchants[0].append(request.form["item"+str(i)+"_enchant"+str(j)])
+            enchants[1].append(request.form["item"+str(i)+"_enchant"+str(j)+"_lv"])
+            
+        items.append(itemClass.item("item"+str(i), request.form["item"+str(i)+"_name"], enchants[0], enchants[1], request.form["item"+str(i)+"_prior"]))
+
+    print(items[0].showItemInfo())
     return "hai"
 
 @app.route("/", methods=["GET", "POST"])
